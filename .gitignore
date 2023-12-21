@@ -1,0 +1,33 @@
+# Ignore Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfplan
+terraform.tfvars
+
+# Ignore local .terraform directory
+**/.terraform/
+
+# Ignore .terraform directories created by Terraform CLI
+.terraform/
+
+# Ignore provider binary files
+*.exe
+# Exclude large files
+.terraform/providers/registry.terraform.io/hashicorp/azurerm/*/terraform-provider-azurerm*.exe
+
+
+# Ignore .tfvars files that are intended to be overridden
+*.auto.tfvars
+
+# Ignore crash log files
+crash.log
+
+# Ignore override files as they are usually used to override resources during testing
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
